@@ -27,7 +27,7 @@ Ensure you have ROS2 installed and sourced (tested with ROS2 Humble). You will a
 1. Clone the repository:
     ```bash
     cd ~/ros2_ws/src
-    git clone https://github.com/ggkarabas/CS460_Project1Submission projct1
+    git clone https://github.com/ggkarabas/CS460_Project1Submission project1
     ```
 
 2. Build the package:
@@ -46,4 +46,4 @@ Ensure you have ROS2 installed and sourced (tested with ROS2 Humble). You will a
 To run the simulation, use the following command:
 
 ```bash
-ros2 launch projct1 simulation_launch.py
+ros2 launch project1 simulation_launch.py
