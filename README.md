@@ -47,3 +47,8 @@ To run the simulation, use the following command:
 
 ```bash
 ros2 launch project1 simulation_launch.py
+```
+## Opening/Closing Doors
+
+To open or close the doors, simply click on the Importable Externproto dropdown menu and change the position of the 'Door' Node from 0 to 1. 0 = closed, 1 = open. 
+
