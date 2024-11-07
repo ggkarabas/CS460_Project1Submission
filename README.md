@@ -88,6 +88,17 @@ To simulate nighttime in the outdoor environment:
 2. Locate the `DirectionalLight` node.
 3. Reduce the luminosity value to create a dimmer, nighttime effect.
 
+# Adjusting Traffic Lights in Webots
+
+To control and adjust the timing of traffic lights in the Webots simulation:
+
+1. **Locate the Traffic Light Node**: Open the `.wbt` world file in Webots and locate the `TrafficLight` node within the tree.
+2. **Enable the Traffic Light**: Ensure the traffic light is enabled and visible in the simulation environment.
+3. **Adjust Timing Settings**: Each `TrafficLight` node typically has parameters light intervals. Adjust these:
+    - `greenTime`: Duration for the green light (in seconds).
+    - `yellowTime`: Duration for the yellow light (in seconds).
+    - `redTime`: Duration for the red light (in seconds).
+
 # Additional Information
 
 ## Modifying World Files
