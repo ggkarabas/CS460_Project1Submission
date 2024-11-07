@@ -1,0 +1,5637 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/TrafficLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/StreetLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/StopSign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/SpeedLimitSign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/GenericTrafficLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/PublicBin.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/FireHydrant.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/Bench.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/Museum.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/Building.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/StonePavement.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/StraightRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadIntersection.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/LargeResidentialTower.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/RandomBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/SimpleBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/SmallManor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/ModernSuburbanHouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Asphalt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/ParkingLines.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/SimpleTwoFloorsHouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/Church.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/StripBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadLine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/CurvedRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/PedestrianCrossing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Grass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/ResidentialBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/FastFoodRestaurant.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/CrossRoadsTrafficLight.proto"
+
+WorldInfo {
+  title "Custom Building Layout"
+  basicTimeStep 20
+}
+Viewpoint {
+  orientation -0.33857069154581326 -0.4019731156231428 0.8507570165108326 4.722412395967374
+  position 118.29031126142657 1132.3033779971586 1114.2555520970823
+}
+TexturedBackground {
+}
+Background {
+}
+Solid {
+  translation 229.05 -160.941 -1.99755
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+        textureTransform TextureTransform {
+          scale 50 50
+        }
+      }
+      geometry Box {
+        size 900 0.01 900
+      }
+    }
+  ]
+}
+StripBuilding {
+  translation 120.71 -358.18 0
+  rotation 0 0 1 -1.5707953071795862
+  name "strip building(2)"
+  length 130
+  randomSeed 2
+}
+StripBuilding {
+  translation -9.0003 -580.19 0
+  rotation 0 0 1 3.14159
+  name "strip building(3)"
+  length 200
+  randomSeed 2
+}
+StripBuilding {
+  translation 243.84 -574.7 0
+  rotation 0 0 1 -1.5707953071795862
+  name "strip building(4)"
+  length 200
+  randomSeed 2
+}
+DirectionalLight {
+  ambientIntensity 0.5
+  color 1 1 0.9
+  direction 10 -10 -5
+  intensity 2
+  castShadows TRUE
+}
+Solid {
+  translation 51 -155.82 0.013681
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot"
+}
+Solid {
+  translation -72.45 73.6196 0.27183
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(2)"
+}
+Solid {
+  translation 168.09 -532.771 -0.0310503
+  rotation -0.5771968951617173 -0.577656895078166 0.5771968951617173 2.093935307179586
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(8)"
+}
+Solid {
+  translation 362.67 -537.041 -0.0744403
+  rotation -0.5771968951617173 -0.577656895078166 0.5771968951617173 2.093935307179586
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(9)"
+}
+Solid {
+  translation 592.12 231.37 0.737672
+  rotation -0.5771968951617173 -0.577656895078166 0.5771968951617173 2.093935307179586
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(10)"
+}
+Solid {
+  translation 166.63 74.5309 -0.74744
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(3)"
+}
+Solid {
+  translation 166.63 202.321 -0.645677
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(6)"
+}
+Solid {
+  translation 66.28 198.371 -0.64882
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(7)"
+}
+Solid {
+  translation 66.36 74.5309 -0.74744
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(4)"
+}
+Solid {
+  translation 38.31 74.5309 -0.74744
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(5)"
+}
+ParkingLines {
+  translation 56.54 -94.78 0.83
+  rotation 0 0 1 3.14159
+}
+Solid {
+  translation 51 -189.63 -0.0132427
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Asphalt {
+      }
+      geometry Box {
+        size 102 0.01 128
+      }
+    }
+  ]
+  name "ParkingLot(1)"
+}
+StraightRoadSegment {
+  translation -9 -57 0
+  rotation 0 1 0 0
+  name "road(6)"
+  numberOfLanes 1
+  lines [
+    RoadLine {
+      type "none"
+    }
+  ]
+  length 130
+}
+StraightRoadSegment {
+  translation -9 -57 0
+  rotation 0 1 0 0
+  name "road(16)"
+  numberOfLanes 1
+  length 130
+}
+StraightRoadSegment {
+  translation -9 -367 0
+  rotation 0 1 0 0
+  name "road(17)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 124
+}
+RoadIntersection {
+  translation 267 0 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(11)"
+}
+RoadIntersection {
+  translation 267 116 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(47)"
+}
+RoadIntersection {
+  translation 484 116 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(46)"
+}
+RoadIntersection {
+  translation 267 266 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(44)"
+  bottom TRUE
+}
+RoadIntersection {
+  translation 484 266 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(48)"
+  bottom TRUE
+}
+RoadIntersection {
+  translation 267 -367 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(14)"
+}
+RoadIntersection {
+  translation 267 -583 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(17)"
+}
+RoadIntersection {
+  translation 634 -583 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(18)"
+}
+CrossRoadsTrafficLight {
+  translation -17.07 0 0
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation -16.97 -582.85 0.1
+  name "cross road traffic light(3)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation 267.11 -582.85 0.11
+  name "cross road traffic light(4)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation 267.21 -367.09 0.21
+  name "cross road traffic light(5)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation 267.31 -200.08 0.31
+  name "cross road traffic light(6)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation 267.41 -100.56 0.41
+  name "cross road traffic light(7)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation 267.51 -0.37 0.51
+  name "cross road traffic light(8)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation 267.61 115.48 0.61
+  name "cross road traffic light(9)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation -108.2 0 0.1
+  name "cross road traffic light(1)"
+  size 8 8
+}
+CrossRoadsTrafficLight {
+  translation -199.22 0 0.2
+  name "cross road traffic light(2)"
+  size 8 8
+}
+RoadIntersection {
+  translation 267 -200 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(15)"
+}
+RoadIntersection {
+  translation 267 -100 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(16)"
+}
+RoadIntersection {
+  translation 634 0 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(12)"
+}
+RoadIntersection {
+  translation 621 98 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(49)"
+}
+RoadIntersection {
+  translation 634 -367 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(13)"
+}
+CurvedRoadSegment {
+  translation 642 -573 0
+  rotation 0 0 1 -1.6223896938995748
+  name "road(26)"
+  lines [
+    RoadLine {
+      color 1 1 0.1
+      type "double"
+    }
+  ]
+  bottom TRUE
+}
+RoadIntersection {
+  translation -17 0 0
+  rotation 0 0 1 0.785
+  name "road intersection(2)"
+  bottom TRUE
+}
+RoadIntersection {
+  translation 115 0 0
+  rotation 0 0 1 0.785
+  name "road intersection(4)"
+  bottom TRUE
+}
+RoadIntersection {
+  translation -108 0 0
+  rotation 0 0 1 0.785
+  name "road intersection(6)"
+}
+RoadIntersection {
+  translation -108 -82 0
+  rotation 0 0 1 0.785
+  name "road intersection(21)"
+}
+RoadIntersection {
+  translation -108 -98 0
+  rotation 0 0 1 0.785
+  name "road intersection(22)"
+}
+RoadIntersection {
+  translation -199 0 0
+  rotation 0 0 1 0.785
+  name "road intersection(19)"
+}
+RoadIntersection {
+  translation -199 -110 0
+  rotation 0 0 1 0.785
+  name "road intersection(20)"
+}
+RoadIntersection {
+  translation -199 -168 0
+  rotation 0 0 1 0.785
+  name "road intersection(23)"
+}
+RoadIntersection {
+  translation -199 -269 0
+  rotation 0 0 1 0.785
+  name "road intersection(24)"
+}
+RoadIntersection {
+  translation -199 -500 0
+  rotation 0 0 1 0.785
+  name "road intersection(37)"
+}
+RoadIntersection {
+  translation -199 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(38)"
+}
+RoadIntersection {
+  translation -75 -269 0
+  rotation 0 0 1 0.785
+  name "road intersection(25)"
+}
+RoadIntersection {
+  translation -75 -168 0
+  rotation 0 0 1 0.785
+  name "road intersection(39)"
+}
+RoadIntersection {
+  translation -75 -500 0
+  rotation 0 0 1 0.785
+  name "road intersection(28)"
+}
+RoadIntersection {
+  translation -75 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(31)"
+}
+RoadIntersection {
+  translation -115 -269 0
+  rotation 0 0 1 0.785
+  name "road intersection(26)"
+}
+RoadIntersection {
+  translation -115 -168 0
+  rotation 0 0 1 0.785
+  name "road intersection(40)"
+}
+RoadIntersection {
+  translation -115 -500 0
+  rotation 0 0 1 0.785
+  name "road intersection(29)"
+}
+RoadIntersection {
+  translation -115 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(32)"
+}
+RoadIntersection {
+  translation -155 -269 0
+  rotation 0 0 1 0.785
+  name "road intersection(27)"
+}
+RoadIntersection {
+  translation -155 -168 0
+  rotation 0 0 1 0.785
+  name "road intersection(41)"
+}
+RoadIntersection {
+  translation -155 -500 0
+  rotation 0 0 1 0.785
+  name "road intersection(30)"
+}
+RoadIntersection {
+  translation -155 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(33)"
+}
+RoadIntersection {
+  translation -17 0 0
+  rotation 0 0 1 0.785
+  name "road intersection(5)"
+}
+RoadIntersection {
+  translation -17 266 0
+  rotation 0 0 1 0.785
+  name "road intersection(45)"
+}
+RoadIntersection {
+  translation -17 -168 0
+  rotation 0 0 1 0.785
+  name "road intersection(7)"
+}
+RoadIntersection {
+  translation -17 -269 0
+  rotation 0 0 1 0.785
+  name "road intersection(8)"
+}
+RoadIntersection {
+  translation -17 -367 0
+  rotation 0 0 1 0.785
+  name "road intersection(10)"
+}
+RoadIntersection {
+  translation -17 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(34)"
+}
+RoadIntersection {
+  translation 163 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(9)"
+}
+RoadIntersection {
+  translation 110 -583 0
+  rotation 0 0 1 0.785
+  name "road intersection(36)"
+}
+RoadIntersection {
+  translation 123 -367 0
+  rotation 0 0 1 0.785
+  name "road intersection(35)"
+}
+RoadIntersection {
+  translation 126 -200 0
+  rotation 0 0 1 0.785
+  name "road intersection(42)"
+}
+RoadIntersection {
+  translation 126 -100 0
+  rotation 0 0 1 0.785
+  name "road intersection(43)"
+}
+RoadIntersection {
+  translation -17 -57 0
+  rotation 0 0 1 0.785
+  name "road intersection(3)"
+}
+RoadIntersection {
+  translation 114 -57 0
+  rotation 0 0 1 -0.7831853071795862
+  name "road intersection(1)"
+}
+StopSign {
+  translation 129.88 -96.08 0
+  rotation 0 0 1 -5.307179586466759e-06
+  name "stop sign(52)"
+}
+StopSign {
+  translation 129.88 -195.95 0
+  rotation 0 0 1 -5.307179586466759e-06
+  name "stop sign(53)"
+}
+StopSign {
+  translation 118.87 -363.1 0
+  rotation 0 0 1 1.57079
+  name "stop sign(54)"
+}
+StraightRoadSegment {
+  translation 134 -200 0
+  rotation 0 1 0 0
+  name "road(21)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 125
+}
+StraightRoadSegment {
+  translation 134 -200 0
+  rotation 0 1 0 0
+  name "road(85)"
+  lines [
+    RoadLine {
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 125
+}
+StraightRoadSegment {
+  translation 134 -100 0
+  rotation 0 1 0 0
+  name "road(20)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 125
+}
+StraightRoadSegment {
+  translation 131 -367 0
+  rotation 0 1 0 0
+  name "road(64)"
+  lines [
+    RoadLine {
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 128
+}
+StraightRoadSegment {
+  translation 115 -5 0
+  rotation 0 0 1 -1.59
+  name "road(2)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  length 45
+}
+Church {
+  translation -37.56 -185.38 0
+}
+Church {
+  translation -37.56 -288.9 0
+  name "church(1)"
+}
+Church {
+  translation -37.56 -299.66 0
+  name "church(2)"
+}
+StraightRoadSegment {
+  translation 126 -208 0
+  rotation 0 0 1 -1.59
+  name "road(10)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 151
+}
+StraightRoadSegment {
+  translation 114 -65 0
+  rotation 0 0 1 -1.59
+  name "road(9)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+}
+StraightRoadSegment {
+  translation 30 -3 1
+  rotation 0 0 1 -1.59
+  name "road(7)"
+  lines [
+    RoadLine {
+      type "none"
+    }
+  ]
+  length 50
+}
+StraightRoadSegment {
+  translation 115 28 0
+  rotation 0 0 1 -1.57
+  name "road(5)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "continuous"
+    }
+  ]
+  length 20
+}
+TrafficLight {
+  translation 15 0 0
+  rotation 0 1 0 0
+}
+StreetLight {
+  translation 24.79 -3.87 0
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+}
+StreetLight {
+  translation 92.95 -53.1999 -0.000278085
+  rotation -2.039949999991511e-06 2.039939999991511e-06 -0.9999999999958387 1.5708
+  name "street light(15)"
+}
+StreetLight {
+  translation 72.8575 -53.0744 -0.000196108
+  rotation -2.039949999991511e-06 2.039939999991511e-06 -0.9999999999958387 1.5708
+  name "street light(16)"
+}
+StreetLight {
+  translation 56.8275 -53.0744 -0.000130708
+  rotation -2.039949999991511e-06 2.039939999991511e-06 -0.9999999999958387 1.5708
+  name "street light(19)"
+}
+StreetLight {
+  translation 46.1475 -53.0744 -8.7134e-05
+  rotation -2.039949999991511e-06 2.039939999991511e-06 -0.9999999999958387 1.5708
+  name "street light(20)"
+}
+StreetLight {
+  translation 12.2975 -53.0744 5.09695e-05
+  rotation -2.039949999991511e-06 2.039939999991511e-06 -0.9999999999958387 1.5708
+  name "street light(21)"
+}
+StreetLight {
+  translation 0.6975 -53.0744 9.82976e-05
+  rotation -2.039949999991511e-06 2.039939999991511e-06 -0.9999999999958387 1.5708
+  name "street light(22)"
+}
+StreetLight {
+  translation -12.7825 -24.2944 0.000153296
+  rotation 2.03994e-06 9.59537e-09 1 3.14159
+  name "street light(23)"
+}
+StreetLight {
+  translation -20.5225 -24.2944 0.000184876
+  rotation -0.0026610707832310236 0.571048168076191 -0.8209122416185015 7.21167e-06
+  name "street light(32)"
+}
+StreetLight {
+  translation -20.5225 -57.3244 0.000185513
+  rotation -0.0026610707832310236 0.571048168076191 -0.8209122416185015 7.21167e-06
+  name "street light(33)"
+}
+StreetLight {
+  translation -20.5225 -76.5544 0.000185882
+  rotation -0.0026610707832310236 0.571048168076191 -0.8209122416185015 7.21167e-06
+  name "street light(34)"
+}
+StreetLight {
+  translation -20.5225 -98.7044 0.000186309
+  rotation -0.0026610707832310236 0.571048168076191 -0.8209122416185015 7.21167e-06
+  name "street light(35)"
+}
+StreetLight {
+  translation -20.5225 -121.154 0.000186739
+  rotation -0.0026610707832310236 0.571048168076191 -0.8209122416185015 7.21167e-06
+  name "street light(36)"
+}
+StreetLight {
+  translation -20.5225 -152.874 0.000187348
+  rotation -0.0026610707832310236 0.571048168076191 -0.8209122416185015 7.21167e-06
+  name "street light(37)"
+}
+StreetLight {
+  translation 31.5675 -152.874 -2.71695e-05
+  rotation 2.05911e-06 9.59539e-09 1 3.14159
+  name "street light(38)"
+}
+StreetLight {
+  translation 31.5674 -213.424 -2.60073e-05
+  rotation 2.05911e-06 9.59539e-09 1 3.14159
+  name "street light(46)"
+}
+StreetLight {
+  translation 31.5675 -172.674 -2.67895e-05
+  rotation 2.05911e-06 9.59539e-09 1 3.14159
+  name "street light(44)"
+}
+StreetLight {
+  translation 31.5675 -192.704 -2.64047e-05
+  rotation 2.05911e-06 9.59539e-09 1 3.14159
+  name "street light(45)"
+}
+StreetLight {
+  translation 31.5675 -127.264 -2.76611e-05
+  rotation 2.05911e-06 9.59539e-09 1 3.14159
+  name "street light(39)"
+}
+StreetLight {
+  translation 73.5775 -123.254 -0.000200745
+  rotation -2.0495199999913104e-06 -2.068709999991229e-06 -0.9999999999957601 -1.5707953071795862
+  name "street light(41)"
+}
+StreetLight {
+  translation 78.4875 -128.404 -0.000220868
+  rotation 0.004519448233381244 -0.9698856208789124 0.2435189048102683 -5.307179586466759e-06
+  name "street light(47)"
+}
+StreetLight {
+  translation 57.8575 -123.254 -0.000136005
+  rotation -2.0495199999913104e-06 -2.068709999991229e-06 -0.9999999999957601 -1.5707953071795862
+  name "street light(43)"
+}
+StreetLight {
+  translation 36.6775 -123.254 -4.87815e-05
+  rotation -2.0495199999913104e-06 -2.068709999991229e-06 -0.9999999999957601 -1.5707953071795862
+  name "street light(42)"
+}
+StreetLight {
+  translation 25.1975 -94.584 -2.05558e-06
+  rotation 2.068699999991229e-06 -2.04950999999131e-06 0.9999999999957601 -1.5707953071795862
+  name "street light(40)"
+}
+StreetLight {
+  translation -13.8178 -34.1662 0.000157708
+  rotation 2.03994e-06 9.59537e-09 1 3.14159
+  name "street light(24)"
+}
+StreetLight {
+  translation 110.66 -3.86984 -0.000350338
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+  name "street light(3)"
+}
+StreetLight {
+  translation 110.66 -22.5898 -0.000350338
+  rotation 1.830119851064533e-06 -0.7444789394141764 -0.6676459456668585 -5.307179586466759e-06
+  name "street light(11)"
+}
+StreetLight {
+  translation 110.66 -33.6898 -0.000350338
+  rotation 1.830119851064533e-06 -0.7444789394141764 -0.6676459456668585 -5.307179586466759e-06
+  name "street light(12)"
+}
+StreetLight {
+  translation 118.31 -43.5098 -0.000380566
+  rotation 1.97554e-06 4.88481e-12 1 -3.1415853071795863
+  name "street light(13)"
+}
+StreetLight {
+  translation 118.31 -12.9098 -0.000380566
+  rotation 1.97554e-06 4.88481e-12 1 -3.1415853071795863
+  name "street light(14)"
+}
+StreetLight {
+  translation 156.98 -3.86968 -0.000539316
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+  name "street light(8)"
+}
+StreetLight {
+  translation 176.69 -3.86962 -0.00061973
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+  name "street light(9)"
+}
+StreetLight {
+  translation 196.84 -3.86956 -0.000701939
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+  name "street light(10)"
+}
+StreetLight {
+  translation 138.21 -3.86975 -0.000462743
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+  name "street light(7)"
+}
+StreetLight {
+  translation 120.16 -3.86983 -0.000389094
+  rotation 2.039929999991511e-06 2.039939999991511e-06 0.9999999999958387 1.5708
+  name "street light(6)"
+}
+StopSign {
+  translation 119.32 3.58 0
+  rotation 0 1 0 0
+}
+StopSign {
+  translation 118.89 -4 0
+  rotation 0 0 1 -1.5707953071795862
+  name "stop sign(1)"
+}
+StopSign {
+  translation 111 3.58 0
+  rotation 0 0 1 1.5708
+  name "stop sign(2)"
+}
+SpeedLimitSign {
+  translation 30 0 0
+  rotation 0 1 0 0
+}
+GenericTrafficLight {
+  translation 40 0 0
+  rotation 0 1 0 0
+  state "green"
+}
+PublicBin {
+  translation 45.6 -3.88 0
+  rotation 0 1 0 0
+}
+FireHydrant {
+  translation 69.38 -3.82 0.14
+  rotation 0 1 0 0
+}
+Bench {
+  translation 61.38 -10.55 0
+  rotation 0 0 1 1.5708
+}
+Museum {
+  translation 51.74 -18.36 -0.14
+  rotation 9.58976e-09 9.58979e-09 -1 -1.5707953071795862
+}
+Museum {
+  translation 51.76 -39.84 -0.14
+  rotation 1.91796e-08 -1.91796e-08 -1 1.5708
+  name "museum(5)"
+}
+Museum {
+  translation 37.25 -75.2 -0.14
+  rotation -1.91797e-08 -1.91797e-08 1 1.57079
+  name "museum(6)"
+}
+Museum {
+  translation 37.25 -86.78 -0.14
+  rotation -1.91796e-08 1.91796e-08 1 -1.5708053071795867
+  name "museum(12)"
+}
+Museum {
+  translation 71.9 -86.78 -0.14
+  rotation -1.91796e-08 1.91796e-08 1 -1.5708053071795867
+  name "museum(13)"
+}
+Museum {
+  translation 3.24003 -198.89 -0.14
+  rotation -1.91796e-08 -4.59822e-17 1 3.14159
+  name "museum(10)"
+}
+Museum {
+  translation 3.23996 -236.88 -0.14
+  rotation -1.91796e-08 -4.59822e-17 1 3.14159
+  name "museum(11)"
+}
+Museum {
+  translation 72.21 -75.2002 -0.14
+  rotation -1.91797e-08 -1.91797e-08 1 1.57079
+  name "museum(7)"
+}
+Museum {
+  translation 102.17 -91.7602 -0.14
+  rotation -4.350738711796982e-11 0.00604911820892661 0.999981703917074 -5.307179586466759e-06
+  name "museum(8)"
+}
+Museum {
+  translation 109.3 -137.36 -0.14
+  rotation -4.350738711796982e-11 0.00604911820892661 0.999981703917074 -5.307179586466759e-06
+  name "museum(14)"
+}
+Museum {
+  translation 97.74 -137.36 -0.14
+  rotation -1.60519e-08 -1.92418e-16 1 3.14159
+  name "museum(18)"
+}
+Museum {
+  translation 97.74 -178.95 -0.14
+  rotation -1.60519e-08 -1.92418e-16 1 3.14159
+  name "museum(19)"
+}
+Museum {
+  translation 97.74 -221.73 -0.14
+  rotation -1.60519e-08 -1.92418e-16 1 3.14159
+  name "museum(20)"
+}
+Museum {
+  translation 97.74 -266.72 -0.14
+  rotation -1.60519e-08 -1.92418e-16 1 3.14159
+  name "museum(21)"
+}
+Museum {
+  translation 108.38 -179.02 -0.14
+  rotation -4.350738711796982e-11 0.00604911820892661 0.999981703917074 -5.307179586466759e-06
+  name "museum(15)"
+}
+Museum {
+  translation 107.82 -221.95 -0.14
+  rotation -4.350738711796982e-11 0.00604911820892661 0.999981703917074 -5.307179586466759e-06
+  name "museum(16)"
+}
+Museum {
+  translation 108.09 -266.84 -0.14
+  rotation -4.350738711796982e-11 0.00604911820892661 0.999981703917074 -5.307179586466759e-06
+  name "museum(17)"
+}
+Museum {
+  translation 6.09 -18.36 -0.14
+  rotation 9.58976e-09 9.58979e-09 -1 -1.5707953071795862
+  name "museum(3)"
+}
+Museum {
+  translation 6.09 -39.97 -0.14
+  rotation -9.58978e-09 9.58975e-09 1 -1.5707953071795862
+  name "museum(9)"
+}
+Museum {
+  translation 87.7 -18.36 -0.14
+  rotation 9.58976e-09 9.58979e-09 -1 -1.5707953071795862
+  name "museum(1)"
+}
+Museum {
+  translation 139.77 15.2 -0.14
+  rotation -9.58978e-09 9.58975e-09 1 -1.5707953071795862
+  name "museum(4)"
+}
+Museum {
+  translation 182.61 15.2 -0.14
+  rotation -9.58978e-09 9.58975e-09 1 -1.5707953071795862
+  name "museum(22)"
+}
+Museum {
+  translation 97.48 -28.3 -0.14
+  rotation -8.236972149310639e-09 0.0052419413678036235 -0.9999862609309673 -5.307179586466759e-06
+  name "museum(2)"
+}
+Building {
+  translation 167.11 -19.26 0
+  rotation 0 1 0 0
+}
+Building {
+  translation 187.11 -19.26 0
+  rotation 0 1 0 0
+  name "building(1)"
+}
+Building {
+  translation 244.62 -19.26 0
+  rotation 0 1 0 0
+  name "building(2)"
+}
+Building {
+  translation 244.62 -38.99 0
+  rotation 0 1 0 0
+  name "building(2)"
+}
+Building {
+  translation 244.62 -59.32 0
+  rotation 0 1 0 0
+  name "building(2)"
+}
+Building {
+  translation 196.12 -157.72 0
+  rotation 0 1 0 0
+  name "building(2)"
+}
+Building {
+  translation 196.12 -139.29 0
+  rotation 0 1 0 0
+  name "building(2)"
+}
+Solid {
+  translation 63.73 -24.1709 0.11074
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+}
+Solid {
+  translation 450.3 -184.357 -2.77681
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 340 0.01 340
+      }
+    }
+  ]
+}
+Solid {
+  translation 63.73 -33.2509 0.103504
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(47)"
+}
+Solid {
+  translation 43.9 -24.1709 0.11074
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(42)"
+}
+SmallManor {
+  translation 13.78 -75 0
+  rotation 0 0 1 1.5708
+}
+Solid {
+  translation -59.77 -129.081 0.0271961
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(170)"
+}
+Solid {
+  translation -79.63 -129.081 0.0271961
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(171)"
+}
+Solid {
+  translation -99.58 -129.081 0.0271961
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(172)"
+}
+Solid {
+  translation -118.67 -129.081 0.0271961
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(173)"
+}
+Solid {
+  translation -138.07 -129.081 0.0271961
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(174)"
+}
+Solid {
+  translation -157.95 -129.081 0.0271961
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(175)"
+}
+Solid {
+  translation 11.64 -82.141 0.0645759
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(157)"
+}
+Solid {
+  translation 102.58 -97.3811 -0.0276001
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(55)"
+}
+Solid {
+  translation 102.39 -86.6711 -0.0190713
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(56)"
+}
+Solid {
+  translation 104.03 -283.021 0.104607
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(202)"
+}
+Solid {
+  translation 84.53 -283.021 0.104607
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(228)"
+}
+Solid {
+  translation 104.03 -243.631 -0.200044
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(220)"
+}
+Solid {
+  translation 104.03 -199.061 -0.164552
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(221)"
+}
+Solid {
+  translation 104.03 -155.741 -0.130055
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(222)"
+}
+Solid {
+  translation 104.03 -114.301 -0.0970556
+  rotation 1 0 0 -1.57
+  children [
+    Shape {
+      appearance Grass {
+      }
+      geometry Box {
+        size 20 0.01 20
+      }
+    }
+  ]
+  name "solid(223)"
+}
+Solid {
+  translation 6.67 -8.8299 -0.177022
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+}
+Solid {
+  translation 16.21 -8.8299 -0.177022
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(5)"
+}
+Solid {
+  translation 21.5 -8.8299 -0.177022
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(49)"
+}
+Solid {
+  translation -2.72 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation -8.7 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(65)"
+}
+Solid {
+  translation -8.7 -49.6399 -0.20952
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(69)"
+}
+Solid {
+  translation -8.7 -42.4399 -0.20379
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(81)"
+}
+Solid {
+  translation 1.02 -49.6399 -0.20952
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(70)"
+}
+Solid {
+  translation 10.48 -49.6399 -0.20952
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(71)"
+}
+Solid {
+  translation 20.28 -49.6399 -0.20952
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(72)"
+}
+Solid {
+  translation 20.28 -40.4299 -0.202186
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(73)"
+}
+Solid {
+  translation 20.26 -31.2399 -0.194868
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(74)"
+}
+Solid {
+  translation 0.8 -29.0099 -0.193092
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(78)"
+}
+Solid {
+  translation 10.16 -29.7799 -0.193707
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(77)"
+}
+Solid {
+  translation 20.28 -21.7599 -0.187317
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(75)"
+}
+Solid {
+  translation 20.28 -16.3899 -0.183044
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(76)"
+}
+Solid {
+  translation -8.7 -18.3699 -0.184618
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(66)"
+}
+Solid {
+  translation -8.7 -27.9999 -0.192288
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(67)"
+}
+Solid {
+  translation -8.7 -35.8699 -0.198555
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(68)"
+}
+Solid {
+  translation -4.84 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(64)"
+}
+Solid {
+  translation -25.68 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(84)"
+}
+StopSign {
+  translation 110.32 -60.76 0
+  rotation 0 0 1 3.14159
+  name "stop sign(3)"
+}
+Solid {
+  translation -25.68 -18.0099 -0.184336
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(89)"
+}
+Solid {
+  translation -25.68 -27.6799 -0.192035
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(90)"
+}
+Solid {
+  translation -25.68 -36.4399 -0.19901
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(91)"
+}
+Solid {
+  translation -25.68 -45.8199 -0.20648
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(92)"
+}
+Solid {
+  translation -25.68 -55.2699 0.01
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(93)"
+}
+Solid {
+  translation -25.68 -64.7599 0.00244288
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(94)"
+}
+Solid {
+  translation -25.68 -74.4499 -0.00527353
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(122)"
+}
+Solid {
+  translation -25.68 -84.2599 -0.0130856
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(123)"
+}
+Solid {
+  translation -25.68 -94.1599 -0.0209691
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(124)"
+}
+Solid {
+  translation -25.68 -101.22 -0.026591
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(125)"
+}
+Solid {
+  translation -25.68 -129.28 -0.0489356
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(126)"
+}
+Solid {
+  translation -25.68 -138.98 -0.0566601
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(136)"
+}
+Solid {
+  translation -25.68 -148.9 -0.0645594
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(137)"
+}
+Solid {
+  translation -25.68 -158.86 -0.0724908
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(176)"
+}
+Solid {
+  translation -25.68 -177.09 -0.0870076
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(177)"
+}
+Solid {
+  translation -25.68 -187.02 -0.0949149
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(178)"
+}
+Solid {
+  translation -25.68 -196.94 -0.102812
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(179)"
+}
+Solid {
+  translation -7.65 -186.85 -0.0947769
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(186)"
+}
+Solid {
+  translation -7.65 -177.04 -0.0869648
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(22)"
+}
+Solid {
+  translation -7.65 -196.74 -0.102653
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(187)"
+}
+Solid {
+  translation -7.65 -205.57 -0.109684
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(188)"
+}
+Solid {
+  translation -7.65 -214.97 -0.117173
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(189)"
+}
+Solid {
+  translation -7.65 -224.77 -0.124976
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(190)"
+}
+Solid {
+  translation -7.65 -234.21 -0.132493
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(191)"
+}
+Solid {
+  translation -7.65 -243.71 -0.140059
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(192)"
+}
+Solid {
+  translation -7.65 -253.17 -0.147589
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(193)"
+}
+Solid {
+  translation -7.65 -259.62 -0.152726
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(194)"
+}
+Solid {
+  translation -7.65 -279.58 -0.16862
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(225)"
+}
+Solid {
+  translation -7.65 -289.46 -0.176492
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(226)"
+}
+Solid {
+  translation -7.65 -291.21 -0.177887
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(227)"
+}
+Solid {
+  translation -8.05 -269.59 0.1
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(224)"
+}
+Solid {
+  translation -25.68 -216.72 -0.118564
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(181)"
+}
+Solid {
+  translation -25.68 -226.49 -0.126346
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(182)"
+}
+Solid {
+  translation -25.68 -236.23 -0.134103
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(183)"
+}
+Solid {
+  translation -25.68 -245.87 -0.141781
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(184)"
+}
+Solid {
+  translation -25.68 -255.15 -0.149166
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(185)"
+}
+Solid {
+  translation -25.68 -119.24 -0.0409406
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(135)"
+}
+Solid {
+  translation -35.43 -119.24 -0.0409406
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(163)"
+}
+Solid {
+  translation -45.12 -119.24 -0.0409406
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(164)"
+}
+Solid {
+  translation -64.89 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(88)"
+}
+Solid {
+  translation -35.58 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(85)"
+}
+Solid {
+  translation -45.55 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(86)"
+}
+Solid {
+  translation -55.58 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(87)"
+}
+Solid {
+  translation -74.61 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(99)"
+}
+Solid {
+  translation -84.28 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(100)"
+}
+Solid {
+  translation -93.98 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(101)"
+}
+Solid {
+  translation -117.33 -43.4799 0.0372185
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(106)"
+}
+Solid {
+  translation -137.21 -39.8899 -0.201758
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(108)"
+}
+Solid {
+  translation -137.21 -30.4699 -0.194253
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(121)"
+}
+Solid {
+  translation -137.21 -49.7699 -0.209626
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(118)"
+}
+Solid {
+  translation -137.21 -59.4899 -0.21737
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(119)"
+}
+Solid {
+  translation -145.92 -60.0899 -0.217845
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(120)"
+}
+Solid {
+  translation -146.13 -39.9799 -0.201831
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(109)"
+}
+Solid {
+  translation -146.13 -30.6399 -0.19439
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(111)"
+}
+Solid {
+  translation -146.13 -49.9299 -0.209749
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(110)"
+}
+Solid {
+  translation -127.3 -43.6399 0.0370914
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(107)"
+}
+Solid {
+  translation -100.85 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(102)"
+}
+Solid {
+  translation -117.2 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(196)"
+}
+Solid {
+  translation -126.81 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(198)"
+}
+Solid {
+  translation -136.21 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(199)"
+}
+Solid {
+  translation -146.01 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(200)"
+}
+Solid {
+  translation -156.04 -8.7599 -0.176968
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(201)"
+}
+Solid {
+  translation -117.22 -15.6399 -0.182446
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(197)"
+}
+Solid {
+  translation 40.84 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation 39.28 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(48)"
+}
+Solid {
+  translation 49.73 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(3)"
+}
+Solid {
+  translation 59.69 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(4)"
+}
+Solid {
+  translation 69.45 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(6)"
+}
+Solid {
+  translation 78.99 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(7)"
+}
+Solid {
+  translation 88.96 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(8)"
+}
+Solid {
+  translation 98.91 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(9)"
+}
+Solid {
+  translation 105.89 -9.3999 -0.177477
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(10)"
+}
+Solid {
+  translation 158.9 -4.5599 -0.173614
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(19)"
+}
+Solid {
+  translation 123.86 13.03 -0.0396372
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(32)"
+}
+Solid {
+  translation 178.55 -4.5599 -0.173614
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(21)"
+}
+Solid {
+  translation 188.4 -4.5599 -0.173614
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(26)"
+}
+Solid {
+  translation 198.27 -4.5599 -0.173614
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(27)"
+}
+Solid {
+  translation 168.62 -4.5599 -0.173614
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(20)"
+}
+Solid {
+  translation 105.89 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(14)"
+}
+Solid {
+  translation 104.65 -66.1899 -0.222703
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(50)"
+}
+Solid {
+  translation 117.17 -121.86 -0.266932
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(59)"
+}
+Solid {
+  translation 117.17 -131.69 -0.274736
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(203)"
+}
+Solid {
+  translation 117.17 -141.63 -0.28263
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(204)"
+}
+Solid {
+  translation 117.17 -151.14 -0.290178
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(205)"
+}
+Solid {
+  translation 117.17 -160.81 -0.297858
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(206)"
+}
+Solid {
+  translation 117.17 -170.7 -0.305711
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(207)"
+}
+Solid {
+  translation 117.17 -180.4 -0.313413
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(208)"
+}
+Solid {
+  translation 117.17 -190.24 -0.321223
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(209)"
+}
+Solid {
+  translation 117.17 -200.02 -0.32899
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(210)"
+}
+Solid {
+  translation 117.17 -209.63 -0.336619
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(211)"
+}
+Solid {
+  translation 117.17 -219.99 -0.344837
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(212)"
+}
+Solid {
+  translation 117.17 -229.37 -0.352281
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(213)"
+}
+Solid {
+  translation 117.17 -239.07 -0.359979
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(214)"
+}
+Solid {
+  translation 117.17 -248.75 -0.367664
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(215)"
+}
+Solid {
+  translation 117.17 -258.44 -0.375357
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(216)"
+}
+Solid {
+  translation 117.17 -268.3 -0.383184
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(217)"
+}
+Solid {
+  translation 117.17 -278.33 -0.391147
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(218)"
+}
+Solid {
+  translation 117.17 -287.69 -0.39858
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(219)"
+}
+Solid {
+  translation 117.17 -112.16 -0.259233
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(60)"
+}
+Solid {
+  translation 111.04 -71.7599 -0.227138
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(58)"
+}
+Solid {
+  translation 105.46 -75.7499 -0.230295
+  rotation -0.5771968951617173 0.577656895078166 -0.5771968951617173 2.09394
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(57)"
+}
+Solid {
+  translation 95.54 -66.1899 -0.222711
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(51)"
+}
+Solid {
+  translation 86.9 -66.1899 -0.222667
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(52)"
+}
+Solid {
+  translation 77.34 -66.1899 -0.222617
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(53)"
+}
+Solid {
+  translation 68.05 -66.1899 -0.222568
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(54)"
+}
+Solid {
+  translation 58.56 -66.1899 -0.22252
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(138)"
+}
+Solid {
+  translation 48.75 -66.1899 -0.222465
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(139)"
+}
+Solid {
+  translation 39.55 -66.1899 -0.222419
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(140)"
+}
+Solid {
+  translation 30.88 -66.1898 -0.222372
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(141)"
+}
+Solid {
+  translation 22.03 -65.5297 -0.221805
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(142)"
+}
+Solid {
+  translation 12.84 -66.2299 -0.222312
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(143)"
+}
+Solid {
+  translation 3.97 -66.1896 -0.222238
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(144)"
+}
+Solid {
+  translation -5.21 -66.1996 -0.222195
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(145)"
+}
+Solid {
+  translation -8.56001 -66.1797 -0.222157
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(146)"
+}
+Solid {
+  translation -8.56008 -76.0597 -0.229996
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(147)"
+}
+Solid {
+  translation -8.56012 -85.5897 -0.23756
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(148)"
+}
+Solid {
+  translation -8.56019 -94.8497 -0.244907
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(149)"
+}
+Solid {
+  translation -8.56023 -104.15 -0.252282
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(150)"
+}
+Solid {
+  translation -8.56028 -114.12 -0.260195
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(151)"
+}
+Solid {
+  translation -8.56029 -123.55 -0.267672
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(152)"
+}
+Solid {
+  translation -8.56035 -133.02 -0.275187
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(153)"
+}
+Solid {
+  translation -8.56045 -152.39 -0.290554
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(154)"
+}
+Solid {
+  translation -8.56047 -159.59 -0.296269
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(156)"
+}
+Solid {
+  translation -8.56039 -142.6 -0.282787
+  rotation -1.6945805405331507e-09 0.7073872256406448 -0.7068262254616984 -3.1415853071795863
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(155)"
+}
+Solid {
+  translation 96.2 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(33)"
+}
+Solid {
+  translation 41.02 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(34)"
+}
+Solid {
+  translation 37.78 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(79)"
+}
+Solid {
+  translation 34.21 -39.1299 -0.20115
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(80)"
+}
+Solid {
+  translation 50.81 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(35)"
+}
+Solid {
+  translation 60.81 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(36)"
+}
+Solid {
+  translation 89.79 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(39)"
+}
+Solid {
+  translation 88.33 -38.5699 -0.200703
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(43)"
+}
+Solid {
+  translation 88.59 -29.1899 -0.193235
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(44)"
+}
+Solid {
+  translation 78.81 -29.1899 -0.193235
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(45)"
+}
+Solid {
+  translation 78.72 -38.8299 -0.20091
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(46)"
+}
+Solid {
+  translation 70.74 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(37)"
+}
+Solid {
+  translation 80.32 -48.4699 -0.208587
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(38)"
+}
+Solid {
+  translation 105.89 -38.6699 -0.200788
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(13)"
+}
+Solid {
+  translation 105.89 -28.9899 -0.193078
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(12)"
+}
+Solid {
+  translation 105.89 -19.2699 -0.185337
+  rotation -1 0 0 1.57
+  children [
+    Shape {
+      appearance StonePavement {
+      }
+      geometry Box {
+        size 10 0.01 10
+      }
+    }
+  ]
+  name "solid(11)"
+}
+LargeResidentialTower {
+  translation -150.65 -21.74 0.1
+  rotation 0 0 1 1.5708
+  numberOfFloors 13
+}
+LargeResidentialTower {
+  translation -133.3 -19.2799 0.1
+  rotation 0 0 1 1.5708
+  name "residential tower(5)"
+  numberOfFloors 13
+}
+LargeResidentialTower {
+  translation -149.33 -71.79 0.1
+  rotation 0 0 1 1.5708
+  name "residential tower(3)"
+  numberOfFloors 13
+}
+LargeResidentialTower {
+  translation -131.65 -70.98 0.1
+  rotation 0 0 1 1.5708
+  name "residential tower(4)"
+  numberOfFloors 13
+}
+LargeResidentialTower {
+  translation -157.24 -35.93 0.1
+  name "residential tower(2)"
+  numberOfFloors 13
+}
+LargeResidentialTower {
+  translation -157.24 -54.96 0.1
+  name "residential tower(1)"
+  numberOfFloors 13
+}
+RandomBuilding {
+  translation -40.08 -133.74 0
+  name "building(5)"
+  floorHeight 4
+  roofShape "flat roof"
+}
+RandomBuilding {
+  translation -40.08 -153.65 0
+  name "building(3)"
+  floorHeight 4
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -127.58 -96.94 0
+  name "building(4)"
+  floorNumber 11
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation 45.04 -155.76 0
+  name "building(8)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 45.04 -135.85 0
+  name "building(16)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 65 -135.85 0
+  name "building(17)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 64.83 -155.76 0
+  name "building(12)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 64.83 -214.14 0
+  name "building(15)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 64.83 -174.78 0
+  name "building(13)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 64.83 -194.46 0
+  name "building(14)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 45.04 -175.55 0
+  name "building(9)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 45.04 -194.91 0
+  name "building(10)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 45.04 -214.12 0
+  name "building(11)"
+  floorNumber 11
+  wallType "brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -147.73 -96.87 0
+  name "building(6)"
+  floorNumber 11
+  wallType "brick building"
+}
+ModernSuburbanHouse {
+  translation 0 -75.14 0
+}
+SimpleBuilding {
+  translation 0 -129.26 2.83
+  name "building(2)"
+}
+SimpleBuilding {
+  translation 0 -109.22 2.83
+  name "building(7)"
+}
+ParkingLines {
+  translation 10.47 -126.62 0.83
+  rotation 0 0 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 10.47 -195.65 0.83
+  rotation 0 0 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 10.47 -220.01 0.83
+  rotation 0 0 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 10.47 -238.33 0.83
+  rotation 0 0 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 10.47 -182.13 0.83
+  rotation 9.58979e-09 9.5898e-09 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 10.47 -112.42 0.83
+  rotation 0 0 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 10.47 -98.13 0.83
+  rotation 0 0 1 -1.5707953071795862
+}
+ParkingLines {
+  translation 93.06 -94.53 0.83
+  rotation 0 0 1 3.14159
+}
+SimpleTwoFloorsHouse {
+  translation -62.17 -121.72 0
+  rotation 0 0 1 -1.5707953071795862
+}
+SimpleTwoFloorsHouse {
+  translation -97.26 -187.66 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(21)"
+}
+SimpleTwoFloorsHouse {
+  translation -136.58 -187.66 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(22)"
+}
+SimpleTwoFloorsHouse {
+  translation -179.92 -187.66 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(23)"
+}
+SimpleTwoFloorsHouse {
+  translation -84.92 -123.46 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(1)"
+}
+SimpleTwoFloorsHouse {
+  translation -107.87 -123.68 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(2)"
+}
+SimpleTwoFloorsHouse {
+  translation -131.11 -124.06 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(3)"
+}
+SimpleTwoFloorsHouse {
+  translation -157.59 -124.06 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(24)"
+}
+SimpleTwoFloorsHouse {
+  translation -181.32 -125.68 0
+  rotation 0 0 1 -1.5707953071795862
+  name "simple two-storey house(4)"
+}
+StripBuilding {
+  translation -31.04 -224.15 0
+  rotation 0 0 1 1.01503e-06
+  length 30
+}
+SimpleBuilding {
+  translation 229.52 18.19 0
+  name "building(2)"
+  floorNumber 4
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 249.65 18.19 0
+  name "building(2)"
+  floorNumber 4
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 348.49 56.07 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 309.07 165.35 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    30 30
+    30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 30
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 571.42 -132.58 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    30 30
+    30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 30
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 571.42 -57.59 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    30 30
+    30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 30
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 571.42 -315.04 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    30 30
+    30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 30
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 309.07 231.77 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    30 30
+    30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 -30
+    -30 30
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 321.06 -426.69 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 212.3 -426.69 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 444.8 -426.69 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 562.99 -426.69 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 445.67 56.07 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 546.01 56.07 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 551.46 164.3 0
+  name "building(2)"
+  floorNumber 4
+  corners [
+    40 40
+    40 -40
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 177.25 -289.26 0
+  name "building(2)"
+  floorNumber 5
+  corners [
+    50 50
+    50 -50
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 562.59 -200.34 0
+  name "building(2)"
+  floorNumber 5
+  corners [
+    50 50
+    50 -50
+    -40 -40
+    -40 40
+  ]
+  wallType "classic building"
+}
+StraightRoadSegment {
+  translation -8.5 0 0
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 115
+}
+StraightRoadSegment {
+  translation -191 -110 0
+  name "road(15)"
+  lines [
+    RoadLine {
+      type "continuous"
+    }
+  ]
+  bottom TRUE
+  length 170
+}
+StraightRoadSegment {
+  translation -100 0 0
+  name "road(14)"
+  lines [
+    RoadLine {
+      color 1 1 0.3
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 75
+}
+StraightRoadSegment {
+  translation -199 -102 0
+  rotation 0 0 1 1.5708
+  name "road(28)"
+  lines [
+    RoadLine {
+      color 1 1 0.1
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 94
+}
+StraightRoadSegment {
+  translation -199 -160 0
+  rotation 0 0 1 1.5708
+  name "road(29)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 42
+}
+StraightRoadSegment {
+  translation -199 -575 0
+  rotation 0 0 1 1.5708
+  name "road(42)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 67
+}
+StraightRoadSegment {
+  translation -115 -575 0
+  rotation 0 0 1 1.5708
+  name "road(47)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 67
+}
+StraightRoadSegment {
+  translation -155 -575 0
+  rotation 0 0 1 1.5708
+  name "road(46)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 67
+}
+StraightRoadSegment {
+  translation -75 -575 0
+  rotation 0 0 1 1.5708
+  name "road(48)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 67
+}
+StraightRoadSegment {
+  translation -75 -261 0
+  rotation 0 0 1 1.5708
+  name "road(56)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 85
+}
+StraightRoadSegment {
+  translation -17 -261 0
+  rotation 0 0 1 1.5708
+  name "road(60)"
+  lines [
+    RoadLine {
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 85
+}
+StraightRoadSegment {
+  translation -17 -359 0
+  rotation 0 0 1 1.5708
+  name "road(63)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 82
+  startLine [
+    ""
+  ]
+}
+StraightRoadSegment {
+  translation -17 -160 0
+  rotation 0 0 1 1.5708
+  name "road(61)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 95
+}
+StraightRoadSegment {
+  translation -17 -49 0
+  rotation 0 0 1 1.5708
+  name "road(62)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 41
+  startLine [
+    ""
+  ]
+}
+StraightRoadSegment {
+  translation -108 -74 0
+  rotation 0 0 1 1.5708
+  name "road(88)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 67
+  startLine [
+    ""
+  ]
+}
+StraightRoadSegment {
+  translation -155 -261 0
+  rotation 0 0 1 1.5708
+  name "road(57)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 85
+}
+StraightRoadSegment {
+  translation -115 -261 0
+  rotation 0 0 1 1.5708
+  name "road(58)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 85
+}
+StraightRoadSegment {
+  translation -199 -261 0
+  rotation 0 0 1 1.5708
+  name "road(30)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 85
+}
+StraightRoadSegment {
+  translation -199 -492 0
+  rotation 0 0 1 1.5708
+  name "road(41)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 215
+}
+StraightRoadSegment {
+  translation -155 -492 0
+  rotation 0 0 1 1.5708
+  name "road(45)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 215
+}
+StraightRoadSegment {
+  translation -115 -492 0
+  rotation 0 0 1 1.5708
+  name "road(44)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 215
+}
+StraightRoadSegment {
+  translation -75 -492 0
+  rotation 0 0 1 1.5708
+  name "road(43)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 215
+}
+FastFoodRestaurant {
+  translation -126.97 -572.47 0
+  brand "subway"
+}
+StraightRoadSegment {
+  translation -17 -575 0
+  rotation 0 0 1 1.5708
+  name "road(59)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 200
+}
+StraightRoadSegment {
+  translation -57 -490 0
+  rotation 0 0 1 1.5708
+  name "road(67)"
+  lines [
+    RoadLine {
+      color 1 1 0.3
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 113
+}
+StraightRoadSegment {
+  translation -191 0 0
+  name "road(13)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 75
+}
+StraightRoadSegment {
+  translation 123.5 0 0
+  name "road(1)"
+  lines [
+    RoadLine {
+      color 1 1 0.4
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 135
+}
+StraightRoadSegment {
+  translation 125 38 0
+  name "road(76)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 70
+}
+StraightRoadSegment {
+  translation -9 266 0
+  name "road(71)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 268
+}
+StraightRoadSegment {
+  translation 492 266 0
+  name "road(80)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 65
+}
+StraightRoadSegment {
+  translation 631 80 0
+  name "road(84)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 65
+}
+StraightRoadSegment {
+  translation -9 -583 0
+  name "road(31)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 111
+}
+StraightRoadSegment {
+  translation 171 -583 0
+  name "road(33)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 88
+}
+StraightRoadSegment {
+  translation 118 -583 0
+  name "road(32)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 37
+}
+StraightRoadSegment {
+  translation -67 -583 0
+  name "road(34)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 42
+}
+StraightRoadSegment {
+  translation -108 -583 0
+  name "road(35)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 25
+}
+StraightRoadSegment {
+  translation -108 -500 0
+  name "road(39)"
+  lines [
+    RoadLine {
+      color 1 1 0.3
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 25
+}
+StraightRoadSegment {
+  translation -108 -269 0
+  name "road(40)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 25
+}
+StraightRoadSegment {
+  translation -108 -168 0
+  name "road(27)"
+  lines [
+    RoadLine {
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 25
+}
+StraightRoadSegment {
+  translation -67 -269 0
+  name "road(52)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 42
+}
+StraightRoadSegment {
+  translation -47 -367 0
+  name "road(69)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 22
+}
+StraightRoadSegment {
+  translation -67 -168 0
+  name "road(55)"
+  lines [
+    RoadLine {
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 42
+}
+StraightRoadSegment {
+  translation -147 -583 0
+  name "road(36)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 24
+}
+StraightRoadSegment {
+  translation -191 -583 0
+  name "road(49)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 28
+}
+StraightRoadSegment {
+  translation -191 -500 0
+  name "road(50)"
+  lines [
+    RoadLine {
+      color 1 1 0.3
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 28
+}
+StraightRoadSegment {
+  translation -191 -269 0
+  name "road(51)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 28
+}
+StraightRoadSegment {
+  translation -191 -168 0
+  name "road(54)"
+  lines [
+    RoadLine {
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 28
+}
+StraightRoadSegment {
+  translation -147 -500 0
+  name "road(37)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 24
+}
+StraightRoadSegment {
+  translation -147 -269 0
+  name "road(38)"
+  lines [
+    RoadLine {
+      color 1 1 0.4
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 24
+}
+StraightRoadSegment {
+  translation -147 -168 0
+  name "road(53)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 24
+}
+StraightRoadSegment {
+  translation 275.5 0 0
+  name "road(3)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "none"
+    }
+  ]
+  bottom TRUE
+  length 350
+}
+StraightRoadSegment {
+  translation 275.5 116 0
+  name "road(74)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 200
+}
+StraightRoadSegment {
+  translation 491 116 0
+  name "road(82)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 120
+}
+StraightRoadSegment {
+  translation 207 116 0
+  name "road(78)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 52
+}
+StraightRoadSegment {
+  translation 275.5 -367 0
+  name "road(11)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 350
+}
+StraightRoadSegment {
+  translation 275.5 -583 0
+  name "road(25)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 350
+}
+StraightRoadSegment {
+  translation 634 -358.5 0
+  rotation 0 0 1 1.5708
+  name "road(4)"
+  numberOfLanes 1
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 350
+}
+StraightRoadSegment {
+  translation 267 -358.5 0
+  rotation 0 0 1 1.5708
+  name "road(12)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 150
+}
+StraightRoadSegment {
+  translation 267 -575 0
+  rotation 0 0 1 1.5708
+  name "road(22)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 200
+}
+StraightRoadSegment {
+  translation 652 -577 0
+  rotation 0 0 1 1.5708
+  name "road(24)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 200
+}
+StraightRoadSegment {
+  translation 267 -192 0
+  rotation 0 0 1 1.5708
+  name "road(18)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 83.4
+}
+StraightRoadSegment {
+  translation 126 -192 0
+  rotation 0 0 1 1.5708
+  name "road(65)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 83.4
+}
+StraightRoadSegment {
+  translation 267 8 0
+  rotation 0 0 1 1.5708
+  name "road(19)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 100
+}
+StraightRoadSegment {
+  translation 267 124 0
+  rotation 0 0 1 1.5708
+  name "road(73)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 134
+}
+StraightRoadSegment {
+  translation 484 124 0
+  rotation 0 0 1 1.5708
+  name "road(79)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 134
+}
+StraightRoadSegment {
+  translation -17 8 0
+  rotation 0 0 1 1.5708
+  name "road(72)"
+  lines [
+    RoadLine {
+      color 1 1 0.3
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 250
+}
+StraightRoadSegment {
+  translation -199 8 0
+  rotation 0 0 1 1.5708
+  name "road(89)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 279
+}
+StraightRoadSegment {
+  translation 267 -91.5 0
+  rotation 0 0 1 1.5708
+  name "road(70)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+  length 83.4
+}
+CurvedRoadSegment {
+  translation 642 -377 0
+  name "road(23)"
+  lines [
+    RoadLine {
+      color 1 1 0.1
+      type "double"
+    }
+  ]
+  bottom TRUE
+}
+CurvedRoadSegment {
+  translation -67 -490 0
+  rotation 0 0 1 -1.5708003061004252
+  name "road(66)"
+  lines [
+    RoadLine {
+      color 1 1 0.1
+      type "double"
+    }
+  ]
+  bottom TRUE
+}
+CurvedRoadSegment {
+  translation -47 -377 0
+  rotation 0 0 1 1.5708003061004252
+  name "road(68)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+  bottom TRUE
+}
+CurvedRoadSegment {
+  translation 125 28 0
+  rotation 0 0 1 1.5708003061004252
+  name "road(75)"
+}
+CurvedRoadSegment {
+  translation 125 28 0
+  rotation 0 0 1 1.5708003061004252
+  name "road(8)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+}
+CurvedRoadSegment {
+  translation 124 -74 0
+  rotation 0 0 1 3.141592653589793
+  name "road(86)"
+  lines [
+    RoadLine {
+      color 1 1 0.1
+      type "double"
+    }
+  ]
+}
+CurvedRoadSegment {
+  translation 116 -92 0
+  name "road(87)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "continuous"
+    }
+  ]
+}
+CurvedRoadSegment {
+  translation 207 106 0
+  rotation 0 0 1 1.5708003061004252
+  name "road(77)"
+}
+CurvedRoadSegment {
+  translation 611 106 0
+  name "road(81)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+}
+CurvedRoadSegment {
+  translation 631 90 0
+  rotation 0 0 1 3.141592653589793
+  name "road(83)"
+  lines [
+    RoadLine {
+      color 1 1 0.2
+      type "double"
+    }
+  ]
+}
+PedestrianCrossing {
+  translation -11.76 -1.19906e-05 0
+  rotation 0 0 1 -1.5707953071795862
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 110.02 0.000112177 0
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian crossing(4)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 120.39 0.000122748 0
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian crossing(5)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 261.61 0.00026674 0
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian crossing(12)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 272.31 0.00027765 0
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian crossing(13)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 267.11 5.02027 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(14)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 267.11 110.75 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(22)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 267.11 121.16 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(23)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 484.24 121.16 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(26)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 261.55 116.28 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "pedestrian crossing(24)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 272.15 116.28 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "pedestrian crossing(25)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 267.11 -5.25973 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(15)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 267.11 -95.1097 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(16)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 267.11 -105.24 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(17)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 261.27 -99.6397 4.41948e-13
+  rotation -9.58981e-09 9.58984e-09 -1 -1.5707853071795865
+  name "pedestrian crossing(18)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 261.27 -199.97 -1.92431e-06
+  rotation -9.58981e-09 9.58984e-09 -1 -1.5707853071795865
+  name "pedestrian crossing(19)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 266.77 -205.21 -2.06375e-06
+  rotation -0.001738220850500573 2.706351324200749e-09 0.9999984892929964 -1.5307179586088182e-05
+  name "pedestrian crossing(20)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 266.77 -194.88 -1.78892e-06
+  rotation -0.001738220850500573 2.706351324200749e-09 0.9999984892929964 -1.5307179586088182e-05
+  name "pedestrian crossing(21)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -21.95 -2.23805e-05 0
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian crossing(1)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -16.86 -5.25002 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(2)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -16.86 -274.15 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(10)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -22.47 -269.39 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "pedestrian crossing(11)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -108.05 -5.24982 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(8)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -108.05 5.20018 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(9)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation -16.86 4.96998 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(3)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 115.16 4.96967 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(6)"
+  scale 0.1 0.4 0.4
+}
+PedestrianCrossing {
+  translation 115.16 -5.21033 0
+  rotation 0 0 1 3.14159
+  name "pedestrian crossing(7)"
+  scale 0.1 0.4 0.4
+}
+GenericTrafficLight {
+  translation -13.29 -172.21 0.2
+  rotation 0 0 1 -1.5707953071795862
+  name "generic traffic light(35)"
+  state "green"
+}
+GenericTrafficLight {
+  translation -13.19 -163.94 0.3
+  rotation 0 0 1 1.01503e-06
+  name "generic traffic light(36)"
+  state "green"
+}
+GenericTrafficLight {
+  translation -20.83 -163.94 0.4
+  rotation 0 0 1 1.5708
+  name "generic traffic light(37)"
+  state "green"
+}
+StopSign {
+  translation -151.06 -264.8 0
+  name "stop sign(4)"
+}
+StopSign {
+  translation -158.92 -264.8 0
+  rotation 0 0 1 1.5708
+  name "stop sign(5)"
+}
+StopSign {
+  translation -118.99 -264.8 0
+  rotation 0 0 1 1.5708
+  name "stop sign(8)"
+}
+StopSign {
+  translation -118.99 -273.09 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(9)"
+}
+StopSign {
+  translation -111.01 -273.09 0
+  rotation 0 0 -1 1.57079
+  name "stop sign(10)"
+}
+StopSign {
+  translation -111.01 -265.19 0
+  rotation 0 0 1 6.32203e-06
+  name "stop sign(11)"
+}
+StopSign {
+  translation -71.04 -265.19 0
+  rotation 0 0 1 6.32203e-06
+  name "stop sign(12)"
+}
+StopSign {
+  translation -20.91 -273.15 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(16)"
+}
+StopSign {
+  translation -20.9094 -370.89 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(17)"
+}
+StopSign {
+  translation -71.04 -272.98 0
+  rotation 0 0 1 -1.5707853071795865
+  name "stop sign(13)"
+}
+StopSign {
+  translation -71.037 -504.16 0
+  rotation 0 0 1 -1.5707853071795865
+  name "stop sign(18)"
+}
+StopSign {
+  translation -78.967 -504.16 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(19)"
+}
+StopSign {
+  translation -78.967 -496.14 0
+  rotation 0 0 1 1.5708
+  name "stop sign(20)"
+}
+StopSign {
+  translation -71.107 -496.14 0
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "stop sign(21)"
+}
+StopSign {
+  translation -111.177 -496.14 0
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "stop sign(22)"
+}
+StopSign {
+  translation -118.727 -496.14 0
+  rotation 0 0 1 1.5708
+  name "stop sign(23)"
+}
+StopSign {
+  translation -118.727 -503.9 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(24)"
+}
+StopSign {
+  translation -111.147 -503.9 0
+  rotation 0 0 -1 1.57079
+  name "stop sign(25)"
+}
+StopSign {
+  translation -151.237 -503.9 0
+  rotation 0 0 -1 1.57079
+  name "stop sign(26)"
+}
+StopSign {
+  translation -158.877 -503.9 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(27)"
+}
+StopSign {
+  translation -158.877 -496.04 0
+  rotation 0 0 1 1.5708
+  name "stop sign(28)"
+}
+StopSign {
+  translation -203.037 -496.04 0
+  rotation 0 0 1 1.5708
+  name "stop sign(30)"
+}
+StopSign {
+  translation -202.707 -579.11 0
+  rotation 0 0 1 1.5708
+  name "stop sign(34)"
+}
+StopSign {
+  translation -159.227 -579.11 0
+  rotation 0 0 1 1.5708
+  name "stop sign(36)"
+}
+StopSign {
+  translation -119.047 -579.11 0
+  rotation 0 0 1 1.5708
+  name "stop sign(37)"
+}
+StopSign {
+  translation -79.247 -579.11 0
+  rotation 0 0 1 1.5708
+  name "stop sign(38)"
+}
+StopSign {
+  translation -203.037 -496.04 0
+  rotation 0 0 1 1.5708
+  name "stop sign(35)"
+}
+StopSign {
+  translation -203.037 -503.98 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(31)"
+}
+StopSign {
+  translation -194.987 -503.98 0
+  rotation 0 0 -1 1.57079
+  name "stop sign(32)"
+}
+StopSign {
+  translation -194.987 -495.98 -0.05
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "stop sign(33)"
+}
+StopSign {
+  translation -150.937 -496.04 0
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "stop sign(29)"
+}
+StopSign {
+  translation -78.92 -272.98 0
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(14)"
+}
+StopSign {
+  translation -78.92 -264.98 0
+  rotation 0 0 1 1.5708
+  name "stop sign(15)"
+}
+StopSign {
+  translation -158.92 -272.8 -0.66
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(6)"
+}
+StopSign {
+  translation -202.09 -272.8 -0.66
+  rotation 0 0 1 -3.1415853071795863
+  name "stop sign(39)"
+}
+StopSign {
+  translation -194.16 -272.96 -0.66
+  rotation 0 0 -1 1.57079
+  name "stop sign(40)"
+}
+StopSign {
+  translation -194.16 -264.77 -0.66
+  rotation 0 0 1 6.32203e-06
+  name "stop sign(41)"
+}
+StopSign {
+  translation -202.69 -264.77 -0.66
+  rotation 0 0 1 1.5708
+  name "stop sign(42)"
+}
+StopSign {
+  translation -151.04 -272.8 -0.66
+  rotation 0 0 -1 1.57079
+  name "stop sign(7)"
+}
+StopSign {
+  translation -151.04 -171.73 -0.66
+  rotation 0 0 -1 1.57079
+  name "stop sign(43)"
+}
+StopSign {
+  translation -194.53 -171.73 -0.66
+  rotation 0 0 -1 1.57079
+  name "stop sign(46)"
+}
+StopSign {
+  translation -194.53 -163.85 -0.66
+  rotation 0 0 1 6.32203e-06
+  name "stop sign(47)"
+}
+StopSign {
+  translation -202.76 -163.85 -0.66
+  rotation 0 0 1 1.5708
+  name "stop sign(48)"
+}
+StopSign {
+  translation -202.76 -105.47 -0.66
+  rotation 0 0 1 1.5708
+  name "stop sign(49)"
+}
+StopSign {
+  translation -194.45 -105.47 -0.66
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "stop sign(50)"
+}
+StopSign {
+  translation -194.45 -113.86 -0.66
+  rotation 0 0 1 -1.5707953071795862
+  name "stop sign(51)"
+}
+StopSign {
+  translation -110.9 -171.16 -0.66
+  rotation 0 0 -1 1.57079
+  name "stop sign(44)"
+}
+StopSign {
+  translation -70.66 -171.16 -0.66
+  rotation 0 0 -1 1.57079
+  name "stop sign(45)"
+}
+ResidentialBuilding {
+  translation -127.55 -535.39 0
+  name "residential building(3)"
+}
+ResidentialBuilding {
+  translation -88.74 -541.8 0
+  name "residential building(4)"
+}
+ResidentialBuilding {
+  translation -87.72 -229.22 0
+  name "residential building(2)"
+}
+ResidentialBuilding {
+  translation -127.31 -229.22 0
+  name "residential building(12)"
+}
+ResidentialBuilding {
+  translation -140.65 -229.22 0
+  name "residential building(13)"
+}
+ResidentialBuilding {
+  translation -169.44 -229.22 0
+  name "residential building(14)"
+}
+ResidentialBuilding {
+  translation -183.31 -229.22 0
+  name "residential building(15)"
+}
+ResidentialBuilding {
+  translation -102.15 -229.22 0
+  name "residential building(11)"
+}
+ResidentialBuilding {
+  translation -61.32 -541.8 0
+  name "residential building(9)"
+}
+ResidentialBuilding {
+  translation -47.03 -541.8 0
+  name "residential building(10)"
+}
+ResidentialBuilding {
+  translation -144.98 -534.04 0
+  rotation 0 0 1 3.14159
+  name "residential building(5)"
+}
+ResidentialBuilding {
+  translation -187.73 -541.8 0
+  rotation 0 0 1 3.14159
+  name "residential building(7)"
+}
+ResidentialBuilding {
+  translation -168.94 -541.8 0
+  rotation 0 0 1 3.14159
+  name "residential building(8)"
+}
+ResidentialBuilding {
+  translation -105.27 -541.8 0
+  rotation 0 0 1 3.14159
+  name "residential building(6)"
+}
+Building {
+  translation 88.44 153.36 0
+  name "building(2)"
+  floorNumber 15
+  corners [
+    100 100
+    100 -100
+    -100 -100
+    -100 100
+  ]
+  roofShape "gabled roof"
+  bottom TRUE
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -468.67 0
+  name "simple two-storey house(5)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -442.93 0
+  name "simple two-storey house(6)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -416.1 0
+  name "simple two-storey house(7)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -390.15 0
+  name "simple two-storey house(8)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -365.65 0
+  name "simple two-storey house(9)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -340.37 0
+  name "simple two-storey house(10)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -315.41 0
+  name "simple two-storey house(11)"
+}
+SimpleTwoFloorsHouse {
+  translation -101.09 -290.03 0
+  name "simple two-storey house(12)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -290.03 0
+  name "simple two-storey house(13)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -290.03 0
+  name "simple two-storey house(25)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -345.46 0
+  name "simple two-storey house(27)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -374 0
+  name "simple two-storey house(28)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -399.39 0
+  name "simple two-storey house(29)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -426.61 0
+  name "simple two-storey house(30)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -453.97 0
+  name "simple two-storey house(31)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -478.27 0
+  name "simple two-storey house(32)"
+}
+SimpleTwoFloorsHouse {
+  translation -177.02 -318.51 0
+  name "simple two-storey house(26)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -478.61 0
+  name "simple two-storey house(20)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -423.32 0
+  name "simple two-storey house(18)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -451.78 0
+  name "simple two-storey house(19)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -315.93 0
+  name "simple two-storey house(14)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -344.06 0
+  name "simple two-storey house(15)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -395.11 0
+  name "simple two-storey house(17)"
+}
+SimpleTwoFloorsHouse {
+  translation -134.51 -368.99 0
+  name "simple two-storey house(16)"
+}
+StripBuilding {
+  translation -54.1 -159.92 0
+  rotation 0 0 1 -1.5707953071795862
+  name "strip building(1)"
+  length 130
+}
+Wall {
+  translation 226.17 288.59 0.000128742
+  rotation -2.84614e-07 7.52281e-08 1 3.14159
+  size 875 1 2.4
+}
+Wall {
+  translation 226.168 -588.22 0.000260663
+  rotation -2.84614e-07 7.52281e-08 1 3.14159
+  name "wall(1)"
+  size 875 1 2.4
+}
+Wall {
+  translation 661.248 -149.02 0.000442245
+  rotation 3.59843e-07 2.09386e-07 -1 -1.5707953071795862
+  name "wall(2)"
+  size 877 1 2.4
+}
+Wall {
+  translation -212.062 -149.02 -5.48685e-05
+  rotation 3.59843e-07 2.09386e-07 -1 -1.5707953071795862
+  name "wall(3)"
+  size 877 1 2.4
+}
+StopSign {
+  translation 637.83 -579.05 0
+  name "stop sign(55)"
+}
+StopSign {
+  translation 630.38 -370.92 0
+  rotation 0 0 1 3.14159
+  name "stop sign(58)"
+}
+StopSign {
+  translation 480.01 119.82 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "stop sign(60)"
+}
+StopSign {
+  translation 488.18 270.06 0
+  rotation 0 0 1 -5.307179586466759e-06
+  name "stop sign(61)"
+}
+StopSign {
+  translation 262.82 262.07 0
+  rotation 0 0 1 3.14159
+  name "stop sign(62)"
+}
+StopSign {
+  translation 638.09 -363.19 0
+  rotation 0 0 1 -0.2618053071795865
+  name "stop sign(59)"
+}
+StopSign {
+  translation 637.83 -586.89 0
+  rotation 0 0 1 -1.5707953071795862
+  name "stop sign(57)"
+}
+StopSign {
+  translation 629.88 -586.84 0
+  rotation 0 0 1 3.14159
+  name "stop sign(56)"
+}
