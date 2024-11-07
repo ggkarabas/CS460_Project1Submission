@@ -85,7 +85,7 @@ ros2 launch project2 outdoor_simulation_launch.py
 To simulate nighttime in the outdoor environment:
 
 1. Open the `outdoorworld_gabriellekarabas.wbt` file in Webots.
-2. Locate the `DirectionalLight` or `PointLight` node.
+2. Locate the `DirectionalLight` node.
 3. Reduce the luminosity value to create a dimmer, nighttime effect.
 
 # Additional Information
