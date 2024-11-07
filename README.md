@@ -35,7 +35,7 @@ Ensure you have ROS2 installed and sourced (tested with ROS2 Humble). You will a
 
     ```bash
     cd ~/ros2_ws/src
-    git clone https://github.com/ggkarabas/CS460_Project1Submission multi_simulations
+    git clone https://github.com/ggkarabas/CS460_Project1Submission.git
     ```
 
 2. Build the packages:
